@@ -170,15 +170,7 @@ nav {
 }
 
 /* Ícone temporário simulando bloco do Scratch */
-.game-thumb::before {
-    content: " quando clicado 🏳️‍🌈 ";
-    background-color: #FF8C1A;
-    color: white;
-    padding: 6px 12px;
-    border-radius: 4px;
-    font-size: 12px;
-    font-weight: bold;
-}
+
 
 .game-info {
     padding: 15px;
