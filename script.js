@@ -1,37 +1,106 @@
-// Script para gerar os 20 espaços de jogos automaticamente
 document.addEventListener("DOMContentLoaded", () => {
     const gamesGrid = document.getElementById("gamesGrid");
-    const totalJogos = 20;
-
-    // Array de exemplos para deixar os nomes divertidos
-    const nomesDivertidos = [
-       
+    
+    // Lista completa com os 15 jogos da FETEC mapeados
+    const listaJogos = [
+        { 
+            nome: "Pokemon Infinite Fusion", 
+            url: "https://scratch.mit.edu/projects/1070193438/fullscreen/",
+            imagem: "https://tavernf.github.io/scratchFetec/Pokemon.png"
+        },
+        { 
+            nome: "Batman Joker'sMaze", 
+            url: "https://scratch.mit.edu/projects/1070660604/fullscreen/",
+            imagem: "https://tavernf.github.io/scratchFetec/Batman.png"
+        },
+        { 
+            nome: "Gênio Quiz", 
+            url: "https://scratch.mit.edu/projects/1070681588/fullscreen/",
+            imagem: "https://tavernf.github.io/scratchFetec/Genio%20quiz.png"
+        },
+        { 
+            nome: "Sonic e Mario", 
+            url: "https://scratch.mit.edu/projects/1070685533/fullscreen/",
+            imagem: "https://tavernf.github.io/scratchFetec/Fogoagua.png"
+        },
+        { 
+            nome: "Spongebob Flight", 
+            url: "https://scratch.mit.edu/projects/1073877425/fullscreen/",
+            imagem: "https://tavernf.github.io/scratchFetec/Sponja.png"
+        },
+        { 
+            nome: "Angry Birds Hallowen", 
+            url: "https://scratch.mit.edu/projects/1064392867/fullscreen/",
+            imagem: "https://tavernf.github.io/scratchFetec/Angry.png"
+        },
+        { 
+            nome: "Super Minecraft Jump", 
+            url: "https://scratch.mit.edu/projects/1071826286/fullscreen/",
+            imagem: "https://tavernf.github.io/scratchFetec/Mine.png"
+        },
+        { 
+            nome: "Ghetto Heroes", 
+            url: "https://scratch.mit.edu/projects/1070659223/fullscreen/",
+            imagem: "https://tavernf.github.io/scratchFetec/Getto.png"
+        },
+        { 
+            nome: "Dark Ness", 
+            url: "https://scratch.mit.edu/projects/1070659918/fullscreen/",
+            imagem: "https://tavernf.github.io/scratchFetec/Space.png"
+        },
+        { 
+            nome: "Tetris", 
+            url: "https://scratch.mit.edu/projects/1070660144/fullscreen/",
+            imagem: "https://tavernf.github.io/scratchFetec/Tetris.png"
+        },
+        { 
+            nome: "Minecraft 2D", 
+            url: "https://scratch.mit.edu/projects/1070682122/fullscreen/",
+            imagem: "https://tavernf.github.io/scratchFetec/Clicker.png"
+        },
+        { 
+            nome: "Mortal Kombat", 
+            url: "https://scratch.mit.edu/projects/1070683055/fullscreen/",
+            imagem: "https://tavernf.github.io/scratchFetec/mortal.png"
+        },
+        { 
+            nome: "Water Sort", 
+            url: "https://scratch.mit.edu/projects/1070683990/fullscreen/",
+            imagem: "https://tavernf.github.io/scratchFetec/water.png"
+        },
+        { 
+            nome: "Zumbis Famintos", 
+            url: "https://scratch.mit.edu/projects/1070684441/fullscreen/",
+            imagem: "https://tavernf.github.io/scratchFetec/sumbis.png"
+        },
+        { 
+            nome: "Sonic 2", 
+            url: "https://scratch.mit.edu/projects/1070684995/fullscreen/",
+            imagem: "https://tavernf.github.io/scratchFetec/sonico.png"
+        }
     ];
 
-    for (let i = 1; i <= totalJogos; i++) {
-        // Criando o elemento do card do jogo
+    // Renderiza todos os cards na tela automaticamente
+    listaJogos.forEach((jogo) => {
         const gameCard = document.createElement("div");
         gameCard.classList.add("game-card");
 
-        // Nome do jogo baseado na lista ou genérico
-        const nomeJogo = nomesDivertidos[i - 1] || `Incrível Jogo #${i}`;
-        
-        // Estrutura interna do card
+        const imagemUrl = jogo.imagem || "https://placehold.co/300x180?text=Sem+Foto";
+
         gameCard.innerHTML = `
-            <div class="game-thumb" style="background: linear-gradient(135deg, #4D97FF22, #FF8C1A22);">
-                </div>
+            <div class="game-thumb">
+                <img src="${imagemUrl}" alt="${jogo.nome}" style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px 8px 0 0;">
+            </div>
             <div class="game-info">
-                <div class="game-title">${nomeJogo}</div>
-                <div class="game-author">@criador_player${i}</div>
+                <div class="game-title">${jogo.nome}</div>
             </div>
         `;
 
-        // Efeito de clique divertido (pode ser configurado para abrir o link do jogo)
+        // Evento de clique para abrir o jogo direto no modo tela cheia
         gameCard.addEventListener("click", () => {
-            alert(`Você clicou para jogar: ${nomeJogo}! 🎮`);
+            window.open(jogo.url, "_blank");
         });
 
-        // Adiciona o card ao grid principal
         gamesGrid.appendChild(gameCard);
-    }
+    });
 });
