@@ -40,42 +40,42 @@ document.addEventListener("DOMContentLoaded", () => {
         },
         { 
             nome: "Ghetto Heroes", 
-            url: "https://scratch.mit.edu/projects/1070659223/fullscreen/",
+            url: "https://scratch.mit.edu/projects/1070293458/fullscreen/",
             imagem: "https://tavernf.github.io/scratchFetec/Getto.png"
         },
         { 
             nome: "Dark Ness", 
-            url: "https://scratch.mit.edu/projects/1070659918/fullscreen/",
+            url: "https://scratch.mit.edu/projects/1073390686/fullscreen//",
             imagem: "https://tavernf.github.io/scratchFetec/Dark.png"
         },
         { 
             nome: "Tetris", 
-            url: "https://scratch.mit.edu/projects/1070660144/fullscreen/",
+            url: "https://scratch.mit.edu/projects/1071804496/fullscreen/",
             imagem: "https://tavernf.github.io/scratchFetec/Tetris.png"
         },
         { 
             nome: "Minecraft 2D", 
-            url: "https://scratch.mit.edu/projects/1070682122/fullscreen/",
+            url: "https://scratch.mit.edu/projects/1066994031/fullscreen/",
             imagem: "https://tavernf.github.io/scratchFetec/minecraft.png"
         },
         { 
             nome: "Mortal Kombat", 
-            url: "https://scratch.mit.edu/projects/1070683055/fullscreen/",
+            url: "https://scratch.mit.edu/projects/1070549007/fullscreen/",
             imagem: "https://tavernf.github.io/scratchFetec/mortal.png"
         },
         { 
             nome: "Water Sort", 
-            url: "https://scratch.mit.edu/projects/1070683990/fullscreen/",
+            url: "https://scratch.mit.edu/projects/1067484457/fullscreen/",
             imagem: "https://tavernf.github.io/scratchFetec/water.png"
         },
         { 
             nome: "Zumbis Famintos", 
-            url: "https://scratch.mit.edu/projects/1070684441/fullscreen/",
+            url: "https://scratch.mit.edu/projects/1067544239/fullscreen/",
             imagem: "https://tavernf.github.io/scratchFetec/sumbis.png"
         },
         { 
             nome: "Sonic 2", 
-            url: "https://scratch.mit.edu/projects/1070684995/fullscreen/",
+            url: "https://scratch.mit.edu/projects/1067830709/fullscreen/",
             imagem: "https://tavernf.github.io/scratchFetec/sonico.png"
         }
     ];
