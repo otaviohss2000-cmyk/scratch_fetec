@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", () => {
         { 
             nome: "Dark Ness", 
             url: "https://scratch.mit.edu/projects/1070659918/fullscreen/",
-            imagem: "https://tavernf.github.io/scratchFetec/Space.png"
+            imagem: "https://tavernf.github.io/scratchFetec/Dark.png"
         },
         { 
             nome: "Tetris", 
@@ -56,7 +56,7 @@ document.addEventListener("DOMContentLoaded", () => {
         { 
             nome: "Minecraft 2D", 
             url: "https://scratch.mit.edu/projects/1070682122/fullscreen/",
-            imagem: "https://tavernf.github.io/scratchFetec/Clicker.png"
+            imagem: "https://tavernf.github.io/scratchFetec/minecraft.png"
         },
         { 
             nome: "Mortal Kombat", 
